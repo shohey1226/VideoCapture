@@ -35,6 +35,6 @@ sleep 2
 driver.get("https://hangouts.google.com/hangouts/_/#{domain}/#{room}?hl=en&authuser=0")
 sleep 5
 driver.find_elements(xpath: "//*[contains(text(), 'Join')]")[0].click
-sleep duration 
+sleep duration.to_i
 
 driver.quit
